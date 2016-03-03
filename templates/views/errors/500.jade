@@ -1,0 +1,12 @@
+//
+   Created by yaroslav on 11/12/15.
+
+extends ../../layouts/base
+
+block content
+   .container
+      h1 Error (500)
+      p.lead Sorry, the site has encountered an error.
+      p.text-danger !{err}
+      p.text-warning !{errorTitle}
+      p.text-info !{errorMsg}

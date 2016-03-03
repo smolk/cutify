@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title= title || 'Cutify | All'
+        meta(name="viewport", content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width")
+        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+        link(href="https://fonts.googleapis.com/css?family=Raleway:300,400", rel="stylesheet" type="text/css")
+        link(href="/styles/style.css", rel="stylesheet")
+
+        block css
+        block head
+
+    body
+        include ../includes/navbar
+        block navbar
+        block intro
+
+        #body.container
+            //+flash-messages(messages)
+            block content
+
+        include ../includes/footer
+        block footer
+
+
+    script(src='//code.jquery.com/jquery-1.12.0.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js')
+    script(src='https://rawgit.com/metafizzy/isotope-masonry-horizontal/master/masonry-horizontal.js')
+    script(src='http://rawgit.com/metafizzy/isotope-packery/master/packery-mode.pkgd.js')
+    block js
+//include ../mixins/flash-messages
+//

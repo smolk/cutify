@@ -1,0 +1,30 @@
+//-
+    Created with Lightsaber and Force.
+    User: yaroslav
+    Date: 11/13/15
+    Time: 10:51 AM
+
+extends ../layouts/base
+block content
+    h1.product-title!= product.title
+
+    div.row
+        div.col-md-8
+            //img(src= product._.image.fill(200, 200), alt=product.name)
+
+            div
+                ul.list-inline
+                    each m in product.media
+                        li
+                            img(src=m.fill(250, 250), alt=product.name)
+
+        div.col-md-4
+            div
+                | !{product.props.html}
+
+                p.product-price=product._.price.format('$0.00')
+
+            | !{product.desc.html}
+
+
+

@@ -1,0 +1,32 @@
+.navbar-default {
+  background: none;
+  border-radius: 0;
+  //border: none;
+  margin-bottom: 0;
+
+  .navbar-brand {
+    font-size: 24px;
+    color: @brand-blue-dark;
+  }
+
+  .navbar-nav {
+    >li>a {
+      color: @brand-blue-dark;
+
+      &:hover {
+        color: @brand-pink-light;
+      }
+    }
+
+    >.active>a,
+    >.active>a:hover,
+    >.active>a:focus {
+      color: @brand-pink-light;
+      background-color: transparent;
+    }
+  }
+
+
+
+}
+

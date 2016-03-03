@@ -1,0 +1,146 @@
+
+.cute-grid {
+  margin-left: -14px;
+}
+
+.cute-grid-item {
+  position: relative;
+  width: 100%;
+  //height: 170px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  color: @brand-wheat;
+
+  > a > img {
+    width: 100%;
+    height: auto;
+  }
+
+  &.open {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    background-color: @brand-blue-dark;
+  }
+
+  .close {
+    font-family: @font-family-sans-serif;
+    color: @brand-wheat;
+    opacity: 0.7;
+    font-size: 38px;
+    font-weight: 100;
+    margin-top: -10px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .item-header {
+    padding: 10px;
+  }
+
+  .item-body {
+    padding: 0 20px;
+  }
+
+  .item-col-gallery,
+  .item-col-features
+  {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h3, .h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+    a {
+      color: @brand-wheat;
+      text-decoration: none;
+    }
+
+    .highlight {
+      color: @brand-green;
+    }
+  }
+
+  .item-image {
+    margin-bottom: 10px;
+  }
+
+  .item-image-preview {
+
+    > a {
+      border: 1px solid transparent;
+      padding: 2px;
+      display: block;
+    }
+
+
+    &.active > a {
+      border-color: #fff;
+    }
+
+  }
+  
+  .list-features ul {
+    //padding: 0;
+    font-size: 14px;
+  }
+
+  .item-price {
+    color: @brand-green;
+    font-size: 24px;
+  }
+
+  .item-desc {
+    padding-bottom: 10px;
+  }
+
+
+  .item-cover {
+      display: none;
+      padding: 55px 5px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.48);
+      color: @brand-wheat;
+      top: 0;
+  }
+
+  &:hover {
+    .item-cover {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @screen-xs-max) {
+  .cute-grid-item {
+    margin-left: 13px;
+
+    width: 170px;
+    height: 170px;
+
+    &.open {
+      width: 536px;
+
+    }
+
+    .item-col-gallery {
+      width: 56%;
+
+    }
+    .item-col-features {
+      width: 44%;
+    }
+  }
+}

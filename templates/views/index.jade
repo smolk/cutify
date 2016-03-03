@@ -1,0 +1,35 @@
+extends ../layouts/base
+
+block head
+    script(src='https://fb.me/react-0.14.7.js')
+    script(src='https://fb.me/react-dom-0.14.7.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js')
+
+block intro
+    div.start
+
+block content
+    section#works
+        h2.text-center <span class="text-highlighted">W</span>orks
+        div#cute-grid
+
+    section#about
+        h2.text-center <span class="text-highlighted">A</span>bout
+        div.row
+            div.col-md-4
+                p image here
+            div.col-md-8
+                p Cross-stitching is my old passion. But most hand-embroidered things looks a bit old-fashioned, so I tried to do something fresh and modern. I started with a bodysuit for my son - embroidered a teddy bear and my mother sewed it. Then I made some presents for our friends. Everybody liked them so much that I start thinking about making some to order. Now I have plenty of ideas that soon are going to be realized)
+
+    section#contact
+        h2.text-center <span class="text-highlighted">C</span>ontact
+        div.row
+            div.col-md-4
+                p Just let us know
+            div.col-md-8
+                div#contact-form
+
+block js
+    script(src='/js/app.js')
+    script(src='/js/react.js', type='text/babel')
+    script(src='/js/contact-form.js', type='text/babel')

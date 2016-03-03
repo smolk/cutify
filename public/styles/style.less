@@ -1,0 +1,57 @@
+@import "bootstrap/bootstrap";
+
+
+@import "cutify/variables";
+@import "cutify/type";
+@import "cutify/forms";
+
+
+@import "cutify/navbar";
+@import "cutify/cute-grid";
+@import "cutify/alerts";
+
+// garbage
+
+#welcome {
+  min-height: 350px;
+}
+
+.test {
+  height: 130px;
+  background-color: @brand-pink-light;
+  margin-bottom: 30px;
+}
+
+
+.start {
+  width: 100%;
+  min-height: 250px;
+  background: url(/styles/images/main_back.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: @screen-xs-max) {
+  .start {
+    min-height: 450px;
+  }
+}
+
+#footer {
+  margin-top: 40px;
+  padding: 30px 0 20px;
+  background-color: @brand-blue-dark;
+  border-top: 1px solid darken(@brand-blue-dark, 20%);
+
+  .list-inline > li {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+
+  a {
+    color: @brand-wheat;
+  }
+}

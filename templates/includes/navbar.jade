@@ -1,0 +1,9 @@
+block navbar
+    nav.navbar.navbar-default
+        .container
+            .navbar-header
+                a.navbar-brand(href='/') <span class="text-highlighted">C</span>utify
+            ul.nav.navbar-nav.navbar-right.hidden-xs
+                each link in navLinks
+                    li(class=(section === link.key ? 'active' : null)): a(href=link.link)= link.label
+            //a.btn.btn-default.navbar-btn.pull-right(href='/keystone') Sign In
