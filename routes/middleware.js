@@ -22,10 +22,10 @@ exports.initLocals = function(req, res, next) {
 
     // Top navigation bar links
     locals.navLinks = [
-        {label: 'Welcome', key: 'home', link: '#welcome'},
-        {label: 'Works', key: 'works', link: '#works'},
-        {label: 'About', key: 'static', link: '#about'},
-        {label: 'Contact', key: 'dynamic', link: '#contact'}
+        {label: 'Welcome', key: 'home', link: '/#welcome'},
+        {label: 'Works', key: 'works', link: '/#works'},
+        {label: 'About', key: 'static', link: '/#about'},
+        {label: 'Contact', key: 'dynamic', link: '/#contact'}
     ];
     next();
 };
