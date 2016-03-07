@@ -5,6 +5,8 @@
  * Time: 10:41 AM
  */
 
+smoothScroll.init();
+
 var ProductItem = React.createClass({
     handleOpenItem: function(event){
         event.preventDefault();
